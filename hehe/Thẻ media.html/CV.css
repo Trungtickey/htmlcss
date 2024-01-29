@@ -3,12 +3,8 @@ section {
     margin: 20px auto;
     padding: 20px;
     background-color: #f4f4f4;
-}
-
-audio {
-    width: 100%;
-    display: block;
-    margin: 20px auto;
+    position:relative;
+    top:0px;
 }
 body {
     font-family: 'Arial', sans-serif;
@@ -22,3 +18,4 @@ header {
     text-align: center;
     padding: 20px;
 }
+

@@ -1,0 +1,65 @@
+.one {
+    width: 100px;
+    height: 100px;
+    background: white;
+    margin-right: 5px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+.two {
+    width: 100px;
+    height: 100px;
+    background:green;
+    margin-right: 5px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+.three {
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin-right: 5px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+.four {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin-right: 5px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+.five {
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin-right: 5px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+.six {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin-right: 5px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+.seven {
+    width: 100px;
+    height: 100px;
+    background: white;
+    margin-right: 5px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+}
+
+.TeamBaBy{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    
+
+}
