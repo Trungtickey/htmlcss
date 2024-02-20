@@ -1,0 +1,358 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 1px;
+    font-family: Montserrat, sans-serif;
+}
+.area1{
+    grid-area: area1;
+    font-size: 15px;
+}
+.area2{
+    grid-area: area2;
+    font-size: 15px;
+    padding:10px;
+}
+.area3{
+    display: inline-block;
+    color: blue;
+    letter-spacing: 5px;
+}
+.c2{
+    color: green;
+}
+.c1{
+    font-size: 15px;
+}
+
+.personal-details__top{
+    display: flex;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-areas:
+    'area1 area2'
+
+}
+.personal-details__bottom{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Android{
+    margin-top: 20px;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid black; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.Angular{
+    margin-top: 20px;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid black; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Bootstrap{
+    margin-top: 20px;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid black; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Vue{
+    margin-top: 20px;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid black; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.React{
+    margin-top: 20px;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid black; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.Mongodb1{
+    margin-top: 20px;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid black; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Lavarel{
+    margin-top: 20px;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid black; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Mongodb2{
+    margin-top: 20px;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid black; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 250px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.anh{
+    width: 40px;
+    height: 50px;
+    display: block;
+    padding: 10px;
+}
+.personal-details_last{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+.last button{
+    color: green;
+}
+.last h1{
+    font-size: 30px;
+}
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  .navbar li{
+    list-style-type: none;
+    float: left;
+    padding: 15px;
+    
+  }
+  .navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+  .navbar li:hover {
+    border-bottom: 2px solid #00ffea;
+  }
+  .my_project{
+    margin-top: 70px;
+    display: grid;
+    grid-template-areas: 
+    'item13 item14 item15'
+    'item16 item17 item18';
+    justify-content: space-evenly;
+  }
+  .item13
+{
+  grid-area: item13;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+.item13 .chu10 {
+    font-size: 13px;
+    white-space: nowrap;
+}
+.a{
+    background-color: rgb(90, 255, 255);
+    color: rgb(0, 100, 255);
+    font-size: 13px;
+}
+.item14
+{
+  grid-area: item13;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+.item15
+{
+  grid-area: item13;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+.item16
+{
+  grid-area: item13;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+.item17
+{
+  grid-area: item13;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+.item13 .anh{
+    background-color: rgba(255, 0, 0, 0.315);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    padding: 15px;
+}
+.item14 .anh{
+    background-color: rgba(119, 0, 255, 0.315);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    padding: 15px;
+    size: 5px;
+}
+.item15 .anh{
+    background-color: rgba(60, 255, 0, 0.315);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    padding: 15px;
+}
+.item16 .anh{
+    background-color: rgba(0, 255, 136, 0.315);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    padding: 15px;
+}
+.item17 .anh{
+    background-color: rgba(0, 255, 251, 0.315);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    padding: 15px;
+}
+
+
+
+.mota{
+    display: flex;
+}
+
+.des{
+    display: flex;
+}
+
+.des p{
+    text-align: left;
+    font-size: 12px;
+    color: grey;
+}
+
+.des .external-link{
+    color: rgb(135, 135, 255);
+}
+
+.chu10 h3{
+    text-align: left;
+}
+.item14 .chu10{
+    font-size: 13px;
+    white-space: nowrap;
+}
+.item15 .chu10{
+    font-size: 13px;
+    white-space: nowrap;
+}
+.item16 .chu10{
+    font-size: 13px;
+    white-space: nowrap;
+}
+.item1 .chu10{
+    font-size: 13px;
+    white-space: nowrap;
+}

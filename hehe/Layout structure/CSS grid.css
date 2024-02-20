@@ -33,7 +33,7 @@
   .grid-item{
     text-align: center;
     font-size: 10px;
-    align-content: center;
+    align-content:center;
     /* padding: 0px; */
     /* border:1px solid pink; */
     /* background-color: pink; */
@@ -122,14 +122,14 @@
     margin-right: 20px;
   } */
   
-  li a {
+  /* li a {
     float:left;
     display: block;
     color: white;
     text-align: center;
     padding: 25px 20px;
     text-decoration: none;
-  }
+  } */
    span {
     display: block;
     color:white;
@@ -151,18 +151,26 @@
     color: white;
     padding: 200px;
   }
-  .navbar{
-    font-size:large;
+  .main-content button{
+    background-color: rgb(245, 7, 102);
   }
-
-  
-  
-    .navbar ul {
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px 120px;
+    background-color: #5e0980;
+  }
+  .navbar div{
+    font-size: 40px;
+    padding:30px 102px;
+  }
+  .navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #9b59b6;
+  background-color: #5e0980;
   
 }
 
@@ -174,12 +182,16 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 25px 16px;
   text-decoration: none;
+  font-size: 15px;
 }
 
 .navbar li a:hover {
   background-color:#8e44ad;
+}
+.main-content{
+  text-align: center;
 }
 .main-content h1 {
   font-size: xx-large;
