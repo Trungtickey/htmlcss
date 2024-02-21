@@ -96,7 +96,7 @@ ul{
     height:450px;
     width:450px;
   }
-  .item4 p{
+.item4 p{
     color: white;
     font-size: 15px;
     padding: 30px;
@@ -323,4 +323,70 @@ ul{
     background-color: white;
     margin: 5px;
 }
+.section {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+.section b{
+  color: #086aea;
+}
+.nav2 button {
+  background-color: #0a1f44;
+  height: 25px;
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+  font-size: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card2 {
+  width: 23%;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.card2 img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+.card2 h2 {
+  font-size: 15px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.lorem {
+  font-size: 8px;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.stars img {
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+}
+
 
