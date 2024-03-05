@@ -12,6 +12,22 @@
 // }
 // console.log("Tổng các số lớn hơn 0 là: ", sum );
 
+// Bài làm while:
+// let number = Number(
+//      prompt("Nhập một số dương để tính tổng, kết thúc bằng cách nhập vào số <=0"));
+//     let sum = 0;
+//     while (number > 0) {
+//      sum += number;
+//      number = Number( prompt("Nhập một số dương để tính tổng, kết thúc bằng cách nhập vào số <=0"));
+//     }
+//     console.log("Tổng các số lớn hơn 0 là: ", sum );
+    
+
+
+
+
+// Bài làm Do while:
+
 let total = 0;
 let userInput;
 do{
