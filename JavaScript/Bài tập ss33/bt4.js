@@ -6,7 +6,7 @@ class Book {
     }
     // Hiện thị thông tin sách.
     displayInfo() {
-        console.log("Tiêu đều: " + this.title + ", Tác Giả: " + this.author + ", Năm xuất bản: " + this.publishedYear);
+        console.log("Tiêu đề: " + this.title + ", Tác Giả: " + this.author + ", Năm xuất bản: " + this.publishedYear);
     }
 }
 

@@ -1,19 +1,19 @@
 const danhSachHoaDon = [];
 
-function hoadon(sohoadon, tenhoadon, ngaytao, tonggiatri) {
+function hoaDon(sohoadon, tenhoadon, ngaytao, tonggiatri) {
     this.sohoadon = sohoadon;
     this.tenhoadon = tenhoadon;
     this.ngaytao = ngaytao;
     this.tonggiatri = tonggiatri;
 }
 
-function themhoadon() {
+function themHoaDon() {
     let sohoadon =Number(prompt("Nhập số hóa đơn: "));
     var tenhoadon = prompt("Nhập tên hóa đơn: ");
     let ngaytao =Number(prompt("Nhập ngày tạo hóa đơn: "));
     let tonggiatri =Number(prompt("Nhập tổng giá trị hóa đơn: "));
 
-    const newhoadon = new hoadon(sohoadon, tenhoadon, ngaytao, tonggiatri);
+    const newhoadon = new hoaDon(sohoadon, tenhoadon, ngaytao, tonggiatri);
     danhSachHoaDon.push(newhoadon);
 }
 
@@ -45,7 +45,7 @@ function main() {
                 4. Thoát`);
         switch (choice) {
             case '1':
-                themhoadon();
+                themHoaDon();
                 break;
             case '2':
                 hienThiHoaDon();
