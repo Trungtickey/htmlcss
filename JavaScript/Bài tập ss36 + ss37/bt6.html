@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT6</title>
+</head>
+<body>
+    <h1 style="color: blue; text-align: center;padding:20px">Xây dựng giao diện quản lý sinh viên
+
+
+        Khi click vào button Create thực hiện kiểm tra dữ liệu:
+        
+        StudentId phải gồm 6 ký tự
+        
+        StudentName không được để trống
+        
+        Age phải có giá trị lớn hơn hoặc bằng 18
+        
+        Phone phải có định dạng là số điện thoại ở VN
+        
+        Email phải có định dạng email
+        
+        Các dữ liệu thỏa mãn thì hiển thị thông tin sinh viên ở bên dưới form</h1>
+    <h2>STUDENT MANAGEMENT</h2>
+    <form id="studentForm">
+        <div>
+            <label for="studentId">Student ID</label>
+            <input type="text" id="studentId" name="studentId" required>
+        </div>
+        <div>
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" name="studentName" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <button type="button" id="createButton">Create</button>
+    </form>
+    
+    <div id="studentInfo"></div>
+    
+    <script src="bt6.js"></script>    
+</body>
+</html>
