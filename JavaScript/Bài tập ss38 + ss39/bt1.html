@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT1 - Điều Hướng Bước</title>
+    <style>
+        .step {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 5px;
+            background-color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            text-align: justify;
+            line-height: 20px;
+        }
+        .active {
+            background-color: blue;
+            color: white;
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blanchedalmond;text-align: center; padding: 50px;">Xây dựng giao diện như hình dưới. Khi click vào nút Next thì lần lượt các Step 2 - 3 - 4 được bật xanh. Tương tự ấn Previous thì các step 2 - 3 - 4 lần lượt được tắt đi. Khi đến Step 4 thì nút Next bị disable (Không ấn được nữa). Quay về Step 1 thì nút Previous bị disable .</h1>
+    <div id="steps">
+        <div class="step active">1</div>
+        <div class="step">2</div>
+        <div class="step">3</div>
+        <div class="step">4</div>
+    </div>
+    <button id="prev" disabled>Prev</button>
+    <button id="next">Next</button>
+    <script src="bt1.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BT2</title>
+    <style>
+        #search-container{
+            width: 150px;
+            display: flex;
+            align-items: center;
+            background-color: blueviolet;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #searchBar {
+            width: 0;
+            transition: width 0.5s ease-in-out;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            background: none;
+            padding: 5px; /* Kích thước chữ trong thanh tìm kiếm */
+        }
+        .search-expanded #searchBar {
+         width: 100px
+        }
+        .fa {
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: steelblue;text-align: center;padding: 50px;">Xây dựng giao diện bắt đầu bằng 1 icon search
+
+
+        Khi ấn lần nữa thì nội dung lại quay icon search ban đầu
+        
+        Yêu cầu transition giữa việc mở rộng và thu gọn cần phải mượt mà</h1>
+        <div id="search-container" class="timKiem">
+            <button id="inputSearch" class="fa fa-search" class="fa-fa-times" style="background-color: grey;"></button>
+            <input type="text" id="searchBar" placeholder="Tìm kiếm...">
+        </div>
+    <script src="bt2.js"></script>    
+</body>
+</html>
