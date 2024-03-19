@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKATHON</title>
+</head>
+<body>
+    <h2>Dự Án Của Tôi</h2>
+<button onclick="newProject()">+ Dự Án Mới</button>
+<table id="projectsTable">
+    <tr>
+        <th>Tên Dự Án</th>
+        <th>URL Hình Ảnh</th>
+        <th>Phụ Đề</th>
+        <th>Mô Tả</th>
+        <th>Ngày</th>
+        <th>Khách Hàng</th>
+        <th>Loại</th>
+        <th>Công Nghệ</th>
+        <th>URL</th>
+        <th>Hành Động</th>
+    </tr>
+</table>
+
+<script>
+    function newProject() {
+        // Hàm này sẽ xử lý việc thêm dự án mới
+    }
+
+    function deleteProject(projectName) {
+        // Xóa dự án khỏi Local Storage
+        localStorage.removeItem(projectName);
+        displayProjects();
+    }
+
+    function displayProjects() {
+        const projectsTable = document.getElementById('projectsTable');
+        projectsTable.innerHTML = ''; // Xóa bảng hiện tại trước khi thêm vào
+
+        for (let i = 0; i < localStorage.length; i++) {
+            const projectName = localStorage.key(i);
+            const projectDetails = JSON.parse(localStorage.getItem(projectName));
+            const row = projectsTable.insertRow(-1);
+            row.insertCell(0).textContent = projectName;
+            // Thêm các cell khác cho mỗi chi tiết của dự án
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Xóa';
+            deleteButton.onclick = function() { deleteProject(projectName); };
+            row.insertCell(9).appendChild(deleteButton);
+        }
+    }
+
+    // Gọi hàm để hiển thị dự án khi trang web được tải
+    displayProjects();
+</script>
+</body>
+</html>

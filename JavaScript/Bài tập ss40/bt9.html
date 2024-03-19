@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUẢN LÝ SẢN PHẨM</title>
+</head>
+<body>
+    <h1 style="color: tomato;text-align: center;padding: 50px;">Tạo một website có chức năng thêm, sửa, xóa, tìm kiếm và hiển thị sản phẩm ra màn hình tương tự mẫu. Tất cả dữ liệu được lưu vào local storage.
+
+
+        Mỗi khi ấn nút sửa thì thông tin sản phẩm sẽ được hiển thị lên 2 ô input phía trên và nút thêm mới sản phẩm sẽ được chuyển thành sửa thông tin sản phẩm.</h1>
+        <input type="text" id="productName" placeholder="Tên sản phẩm">
+        <input type="number" id="productPrice" placeholder="Giá sản phẩm">
+        <button id="addButton" onclick="addProduct()">Thêm mới sản phẩm</button>
+        <button id="editButton" onclick="editProduct()" style="display: none;">Sửa thông tin sản phẩm</button><br><br>
+        <input type="text" id="search" placeholder="Tìm sản phẩm theo tên" oninput="displayProducts()">
+        <table id="productList">
+            <tr>
+                <th>STT</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Thao tác</th>
+            </tr>
+        </table>
+    
+        <script>
+            let selectedProductIndex = null;
+    
+            function addProduct() {
+                let productName = document.getElementById('productName').value;
+                let productPrice = document.getElementById('productPrice').value;
+                if (productName && productPrice) {
+                    let products = JSON.parse(localStorage.getItem('products')) || [];
+                    products.push({productName, productPrice});
+                    localStorage.setItem('products', JSON.stringify(products));
+                    document.getElementById('productName').value = '';
+                    document.getElementById('productPrice').value = '';
+                    displayProducts();
+                }
+            }
+    
+            function editProduct() {
+                let products = JSON.parse(localStorage.getItem('products')) || [];
+                products[selectedProductIndex] = {
+                    productName: document.getElementById('productName').value,
+                    productPrice: document.getElementById('productPrice').value
+                };
+                localStorage.setItem('products', JSON.stringify(products));
+                document.getElementById('productName').value = '';
+                document.getElementById('productPrice').value = '';
+                document.getElementById('addButton').style.display = 'block';
+                document.getElementById('editButton').style.display = 'none';
+                selectedProductIndex = null;
+                displayProducts();
+            }
+    
+            function deleteProduct(index) {
+                let products = JSON.parse(localStorage.getItem('products')) || [];
+                products.splice(index, 1);
+                localStorage.setItem('products', JSON.stringify(products));
+                displayProducts();
+            }
+    
+            function selectProduct(index) {
+                let products = JSON.parse(localStorage.getItem('products')) || [];
+                document.getElementById('productName').value = products[index].productName;
+                document.getElementById('productPrice').value = products[index].productPrice;
+                document.getElementById('addButton').style.display = 'none';
+                document.getElementById('editButton').style.display = 'block';
+                selectedProductIndex = index;
+            }
+    
+            function displayProducts() {
+                let products = JSON.parse(localStorage.getItem('products')) || [];
+                let productList = document.getElementById('productList');
+                productList.innerHTML = '<tr><th>STT</th><th>Tên sản phẩm</th><th>Giá</th><th>Thao tác</th></tr>';
+                for (let i = 0; i < products.length; i++) {
+                    productList.innerHTML += `<tr><td>${i+1}</td><td>${products[i].productName}</td><td>${products[i].productPrice}</td><td><button onclick="selectProduct(${i})">Sửa</button> <button onclick="deleteProduct(${i})">Xóa</button></td></tr>`;
+                }
+            }
+    
+            window.onload = displayProducts;
+        </script>
+</body>
+</html>
