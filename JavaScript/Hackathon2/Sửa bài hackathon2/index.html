@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo hackathon 2</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="input">
+       <input
+       class="display" 
+       type="text"
+       placeholder="project name"
+       id="project_name"
+       />
+       <input
+       class="display" 
+       type="text"
+       placeholder="img url"
+       id="img_url"
+       required
+       />
+       <input
+       class="display" 
+       type="text"
+       placeholder="link"
+       id="link"
+       required
+       />
+       <input class="display" type="text" placeholder="tag" id="tag" required />
+      <button
+        style="background-color: lightblue; width: 100px; height: 50px"
+        class="display"
+        id="newProject"
+      >
+        + New Project
+      </button>
+    </div>
+    <table id="projectTable">
+        <tr>
+            <th>Project Name</th>
+            <th>Image URL</th>
+            <th>link</th>
+            <th>Tags</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
