@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/file.css">
+    <title>FORM SIGN IN</title>
+  </head>
+  <body>
+    <header class="header-login">
+        <div class="logo">
+            <a href="/index.html"><img src="/assets/image/50l_31ts03131_4_ce3185c765e64246a2f2ef434ed9c016_master.webp" alt="" style="height: 100px;width: 90px;"></a>
+            <h1>MLB SIGN IN</h1>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <form class="login-form" method="POST" id="form-2">
+            <h2>Log in</h2>
+            <p>Sign in with your email address and password.</p>
+            <div class="form-group">
+                <label for="email">EMAIL ADDRESS</label><br>
+                <input id="email" name="email" type="text" placeholder="Enter a valid email" class="form-control"><br>
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">PASSWORD</label><br>
+                <input type="password" id="password" name="password" type="text" placeholder="Enter your password" class="form-control"><br>
+                <span class="form-message"></span>
+            </div>
+            <span class="text">Password must be at least 8 characters and contain both letters and numbers.</span><br>
+            <input type="checkbox" class="showPassword">
+            <span>Show password</span><br>
+     
+            <button id="loginButton" class="form-submit">Log in</button><br>
+        </form>
+        <div class="register-form">
+            <h2>Create an account</h2>
+            <p>Create an account now! You can get special services for yourself such as checking your purchase history
+                and getting member coupons. Sign up for free today!
+            </p>
+            <button class="registerButton" onclick="registerUser()">Register</button><br>
+            <a href="/page/sign in.html"></a>
+        </div>
+    </div>
+
+    <div id="toast"></div>
+    <script src="/assets/js/file.js"></script>
+    <script src="/assets/js/validator.js"></script>
+  </body>
+</html>

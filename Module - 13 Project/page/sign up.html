@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROM SIGN UP</title>
+    <link rel="stylesheet" href="/assets/css/sign in.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    
+</head>
+
+<body>
+    <header class="header-login">
+        <div class="logo">
+            <a href="/index.html"><img src="/assets/image/50l_31ts03131_4_ce3185c765e64246a2f2ef434ed9c016_master.webp" alt="" style="height: 100px;width: 90px;"></a>
+        </div>
+        <h1>MLB SIGN UP</h1>
+    </header>
+    <form class="register-form" id="form-1" method="POST">
+        <h2>CREATE AN ACCOUNT</h2>
+        <div class="form-group">
+            <label for="text">Fullname</label><br>
+            <input id="name" name="name" type="text" placeholder="Enter your fullname" class="form-control"><br>
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="number">Age</label><br>
+            <input id="age" name="age" type="text" placeholder="Enter your age" class="form-control"><br>
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="text" placeholder="Enter a valid email" class="form-control"><br>
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" type="text" class="form-control"><br>
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="password_confirmation">Confirm Password</label><br>
+            <input type="password" id="password_confirmation" name="password_confirmation" type="text"
+                class="form-control"><br>
+            <span class="form-message"></span>
+        </div>
+        <button class="form-submit">Register</button>
+    </form>
+
+    <div id="toast"></div>
+    <script src="/assets/js/register.js"></script>
+    <script src="/assets/js/validator.js"></script>
+</body>
+
+</html>

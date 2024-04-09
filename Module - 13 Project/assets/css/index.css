@@ -1,0 +1,183 @@
+body {
+  background-image: url(/assets/image/ao-phong-mlb-monogram-logo-ny-loang-mau-den-2-jfif-1689126260744.webp);
+}
+
+.container-fluid{
+  background-color: grey;
+}
+
+.center-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.Ao {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.Quan {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.Mu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.Shoes {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  width: 18rem;
+  height: 26rem;
+  margin-right: 10px;
+
+}
+
+.btn {
+  background-color: black;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 10px;
+}
+
+.cart-product-image {
+  max-width: 100px;
+  /* Điều chỉnh kích thước tối đa của hình ảnh */
+  height: auto;
+  /* Đảm bảo tỷ lệ khung hình không bị méo */
+}
+
+.search-container {
+  position: relative;
+  margin: auto;
+  width: 40%;
+  margin-top: 20px;
+}
+
+#searchInput {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#searchResults {
+  position: absolute;
+  width: 80%;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+
+#searchResults a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#searchResults a:hover {
+  background-color: #f1f1f1;
+}
+
+#searchResults.show {
+  display: block;
+}
+
+.add-to-cart-section {
+  display: flex;
+  align-items: center;
+  /* Canh giữa theo chiều dọc */
+}
+
+#heartIcon {
+  margin-right: 10px;
+  /* Khoảng cách giữa icon trái tim và icon người dùng */
+}
+
+.button-group {
+  display: flex;
+}
+
+.btn-buy {
+  margin-right: 10px;
+}
+
+.Comment {
+  padding: 20px;
+}
+
+#favoriteModalImage {
+  max-width: 200px;
+  /* Điều chỉnh kích thước tối đa của hình ảnh trong modal */
+  height: auto;
+  /* Đảm bảo tỷ lệ khung hình không bị méo */
+  margin: 0 auto;
+  /* Canh giữa hình ảnh */
+  display: block;
+  /* Đảm bảo hình ảnh được hiển thị trung tâm */
+}
+
+
+/* Phân Trang */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  /* Đặt chiều cao của container là 100% chiều cao của viewport */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination a {
+  margin: 0 5px;
+  /* Khoảng cách giữa các liên kết */
+  text-decoration: none;
+  /* Loại bỏ gạch chân của liên kết */
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+  color: #f1f1f1;
+} 
